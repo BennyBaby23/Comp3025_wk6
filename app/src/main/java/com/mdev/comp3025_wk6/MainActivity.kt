@@ -19,7 +19,7 @@ class MainActivity : AppCompatActivity() {
         Log.i("contact_model", contactModel.toString())
 
         val contactList = deserializeJSON()
-        val contactList2 = deserializeJSON2()
+
         if (contactList != null)
         {
             for(contact in contactList)
@@ -27,6 +27,9 @@ class MainActivity : AppCompatActivity() {
                 Log.i("listItem", contact.toString())
             }
         }
+
+        //for asset
+        val contactList2 = deserializeJSON2()
         if (contactList2 != null)
         {
             for(contact in contactList2)
