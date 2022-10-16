@@ -64,6 +64,7 @@ class MainActivity : AppCompatActivity() {
         val contactList: List<ContactModel>? = adapter.fromJson(contactListRawString)
         return contactList
     }
+
     fun deserializeJSON2(): List<ContactModel>?
     {
         val moshi = Moshi.Builder().addLast(KotlinJsonAdapterFactory()).build()
