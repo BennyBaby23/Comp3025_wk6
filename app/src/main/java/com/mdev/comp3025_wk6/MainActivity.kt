@@ -47,6 +47,7 @@ class MainActivity : AppCompatActivity() {
             .use {it.readText()}
     }
 
+    //FUNCTION FOR ASSETS
     fun getTextFromAssets(context: Context, fileName: String): String
     {
         return context.resources.assets.open(fileName)
